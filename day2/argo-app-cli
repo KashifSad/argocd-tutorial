@@ -1,0 +1,6 @@
+argocd app create demo-kash \
+  --repo https://github.com/KashifSad/argocd-tutorial.git \
+  --path day3 \
+  --dest-server https://kubernetes.default.svc \
+  --dest-namespace default \
+  --sync-policy automated
